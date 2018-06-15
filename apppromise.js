@@ -30,7 +30,7 @@ axios
         var address = response.data.results["0"].formatted_address;
         var lat = response.data.results["0"].geometry.location.lat;
         var long = response.data.results["0"].geometry.location.lng
-        var weatherLink = `https://api.darksky.net/forecast/4a887e83d8315445575f12c9f8ec533c/${lat},${long}`
+        var weatherLink = `https://api.darksky.net/forecast/yourkey/${lat},${long}`
         objData.address = address;
         objData.latitude = lat;
         objData.longitude = long;
