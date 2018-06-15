@@ -1,4 +1,3 @@
-//AIzaSyDHBZs81IgMexrdlRa2w3ZoxhXJdmwKouA
 const yargs = require('yargs');
 const axios = require('axios');
 
@@ -21,7 +20,7 @@ var objData = {
     weather: ""
 }
 var encodeCmd = encodeURIComponent(argv.a);
-var geocodLink = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeCmd}&key=AIzaSyDHBZs81IgMexrdlRa2w3ZoxhXJdmwKouA`;
+var geocodLink = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeCmd}&key=`;
 axios
     .get(geocodLink)
     .then((response) => {
